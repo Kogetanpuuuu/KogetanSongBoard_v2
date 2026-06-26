@@ -1,0 +1,123 @@
+:root{
+  --panel-w: 285px;
+  --glass: rgba(0,0,0,.28);
+  --border: rgba(255,255,255,.22);
+  --text: rgba(255,255,255,.96);
+  --sub: rgba(255,255,255,.78);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+.view-body{
+  background: transparent;
+  overflow:hidden;
+  font-family: "Yu Gothic", "Meiryo", system-ui, sans-serif;
+}
+.songboard{
+  width: var(--panel-w);
+  color: var(--text);
+  padding: 10px;
+}
+.glass-card{
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 15px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.24);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.section-title{
+  font-size: 12px;
+  letter-spacing: .11em;
+  font-weight: 800;
+  color: var(--sub);
+  margin-bottom: 10px;
+}
+.request-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.status{
+  font-size:10px;
+  padding:4px 8px;
+  border-radius:999px;
+  background:rgba(255,255,255,.16);
+}
+.status.closed{opacity:.65}
+.now-song{
+  min-height: 48px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  font-size: 25px;
+  line-height:1.25;
+  font-weight: 900;
+  word-break: break-word;
+  transition: opacity .22s ease, transform .22s ease;
+}
+.now-song.fade{
+  opacity:0;
+  transform: translateY(5px);
+}
+.request-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.request-list li{
+  font-size:16px;
+  line-height:1.45;
+  padding:3px 0;
+  word-break:break-word;
+}
+.request-list li::before{
+  content:"♪ ";
+  opacity:.9;
+}
+.control-body{
+  background:#111;
+  color:#fff;
+  font-family:"Yu Gothic","Meiryo",system-ui,sans-serif;
+  padding:24px;
+}
+.control-panel{
+  max-width:640px;
+}
+h1{margin:0 0 18px;font-size:25px}
+label{display:block;margin:16px 0 8px;font-weight:800}
+input[type=text],textarea{
+  width:100%;
+  border:1px solid #444;
+  border-radius:14px;
+  background:#1f1f1f;
+  color:#fff;
+  padding:13px;
+  font-size:16px;
+}
+textarea{min-height:190px;resize:vertical}
+.checkbox-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.checkbox-row input{width:20px;height:20px}
+.button-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+button{
+  border:0;
+  border-radius:999px;
+  padding:12px 18px;
+  font-weight:800;
+  cursor:pointer;
+}
+button.primary{background:#fff;color:#111}
+button:not(.primary){background:#333;color:#fff}
+.hint,.saved-text{color:#bbb;font-size:13px}
+.saved-text{min-height:1.4em}
