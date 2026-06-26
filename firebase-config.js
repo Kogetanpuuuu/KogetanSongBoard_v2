@@ -8,7 +8,6 @@ const firebaseConfig = {
   appId: "1:179579414446:web:91bd93672640e60e04ca3f",
   measurementId: "G-9KQM60TQ4N"
 };
-
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 const boardRef = db.ref("boards/kogetan/main");

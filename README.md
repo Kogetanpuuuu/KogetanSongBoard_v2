@@ -1,8 +1,3 @@
-# Kogetan SongBoard v2 complete
+# Kogetan SongBoard v3
 
-表示画面: view.html
-操作画面: control.html
-
-GitHubにこのZIPの中身を全部アップロードしてください。
-Vercelで公開後、TikTok LIVE Studioのリンクに /view.html を貼ります。
-操作は /control.html を開きます。
+余白ゼロ寄せ / Pink White Yellow Sky Blue / サイズ切替 / OPENは残す版です。
