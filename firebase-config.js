@@ -1,15 +1,14 @@
-// Firebase設定をここに貼ります
-// Firebase Console > プロジェクトの設定 > マイアプリ > SDK設定と構成 の firebaseConfig を置き換えてね
 const firebaseConfig = {
-  apiKey: "PASTE_HERE",
-  authDomain: "PASTE_HERE",
-  databaseURL: "PASTE_HERE",
-  projectId: "PASTE_HERE",
-  storageBucket: "PASTE_HERE",
-  messagingSenderId: "PASTE_HERE",
-  appId: "PASTE_HERE"
+  apiKey: "AIzaSyBn9tMaF0uMb_8nqc9NDErfThpbWyS9Fbk",
+  authDomain: "kogetansongboard.firebaseapp.com",
+  databaseURL: "https://kogetansongboard-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "kogetansongboard",
+  storageBucket: "kogetansongboard.firebasestorage.app",
+  messagingSenderId: "179579414446",
+  appId: "1:179579414446:web:91bd93672640e60e04ca3f",
+  measurementId: "G-9KQM60TQ4N"
 };
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
-const boardRef = db.ref("boards/kogetan");
+const boardRef = db.ref("boards/kogetan/main");
